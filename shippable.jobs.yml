@@ -5,4 +5,4 @@ jobs:
       - IN: sample-script
       - IN: triggertest1
       - TASK:
-        - script: GET/sample-script/sample-script/echo.sh
+        - script: IN/sample-script/sample-script/echo.sh
