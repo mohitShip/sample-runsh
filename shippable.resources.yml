@@ -5,4 +5,10 @@ resources:
     pointer:
       sourceName: himanshu0503/sample-script
       branch: master
-
+  - name: sn-nginx
+    type: image
+    integration: dockerhub
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
