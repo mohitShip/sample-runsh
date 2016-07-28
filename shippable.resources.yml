@@ -12,3 +12,11 @@ resources:
       sourceName: "library/nginx"
     seed:
       versionName: latest
+
+  - name: sn-busybox
+    type: image
+    integration: dockerhub
+    pointer:
+      sourceName: "library/busybox"
+    seed:
+      versionName: latest
