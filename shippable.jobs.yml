@@ -15,4 +15,4 @@ jobs:
       - IN: triggertest1
       - IN: sn-busybox
         pull: false
-
+      - TASK: managed
