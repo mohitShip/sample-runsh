@@ -6,6 +6,13 @@ jobs:
       - IN: triggertest1
       - TASK:
         - script: IN/sample-script/sample-script/echo.sh
+    on_success:
+      - uname -a
+      - echo "this works"
+    on_failure:
+      - uname -a
+      - echo "Inside on failure"
+
   - name: dv-man
     type: manifest
     steps:
@@ -15,10 +22,4 @@ jobs:
       - IN: triggertest1
       - IN: sn-busybox
         pull: false
-    on_success:
-      - uname -a
-      - echo "this works"
-    on_failure:
-      - uname -a
-      - echo "Inside on failure"  
       
