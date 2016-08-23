@@ -1,5 +1,5 @@
 jobs:
-  - name: script-somerandomshit
+  - name: script-somerandomscript
     type: runSh
     steps:
       - IN: sample-script
@@ -13,13 +13,13 @@ jobs:
       - uname -a
       - echo "Inside on failure"
 
-  - name: dv-man
-    type: manifest
-    steps:
-      - IN: sn-nginx
-        pull: false
-      - TASK: managed
-      - IN: triggertest1
-      - IN: sn-busybox
-        pull: false
+  #- name: dv-man
+   # type: manifest
+    #steps:
+     # - IN: sn-nginx
+      #  pull: false
+      #- TASK: managed
+      #- IN: triggertest1
+      #- IN: sn-busybox
+      #  pull: false
       
