@@ -1,22 +1,11 @@
 jobs:
-  # - name: script-random
-  #   type: runSh
-  #   steps:
-  #     - IN: sample-script
-  #     - IN: triggertest1
-  #     - TASK:
-  #       - script: IN/sample-script/gitRepo/echo.sh
-  #   on_success:
-  #     - NOTIFY: slackNotification
-  #     - script: uname -a
-  #     - script: echo "this works"
-  #   on_failure:
-  #     - NOTIFY: slackNotification
-  #     - script: uname -a
-  #     - script: echo "Inside on failure"
-
-  - name: dv-man
-    type: manifest
+  - name: script-random
+    type: runSh
+    steps:
+      - IN: sample-script
+      - IN: triggertest1
+      - TASK:
+        - script: IN/sample-script/gitRepo/echo.sh
     on_success:
       - NOTIFY: slackNotification
       - script: uname -a
@@ -25,11 +14,22 @@ jobs:
       - NOTIFY: slackNotification
       - script: uname -a
       - script: echo "Inside on failure"
-    steps:
-      - IN: sn-nginx
-        pull: false
-      - TASK: managed
-      - IN: triggertest1
-      - IN: sn-busybox
-        pull: false
+
+  # - name: dv-man
+  #   type: manifest
+  #   on_success:
+  #     - NOTIFY: slackNotification
+  #     - script: uname -a
+  #     - script: echo "this works"
+  #   on_failure:
+  #     - NOTIFY: slackNotification
+  #     - script: uname -a
+  #     - script: echo "Inside on failure"
+  #   steps:
+  #     - IN: sn-nginx
+  #       pull: false
+  #     - TASK: managed
+  #     - IN: triggertest1
+  #     - IN: sn-busybox
+        # pull: false
       
