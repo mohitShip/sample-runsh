@@ -21,10 +21,10 @@ resources:
   #   seed:
   #     versionName: latest
   
-  # - name: slackNotification
-  #   type: notification
-  #   integration: slack
-  #   pointer:
-  #     recipients:
-  #       - "#slack_notifications"
+  - name: slackNotification
+    type: notification
+    integration: slack
+    pointer:
+      recipients:
+        - "#slack_notifications"
 
