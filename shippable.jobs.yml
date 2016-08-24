@@ -1,5 +1,5 @@
 jobs:
-  - name: script-somerandomscript
+  - name: script-random
     type: runSh
     steps:
       - IN: sample-script
@@ -7,9 +7,11 @@ jobs:
       - TASK:
         - script: IN/sample-script/gitRepo/echo.sh
     on_success:
+      - NOTIFY: slackNotification
       - script: uname -a
       - script: echo "this works"
     on_failure:
+      - NOTIFY: slackNotification
       - script: uname -a
       - script: echo "Inside on failure"
 
