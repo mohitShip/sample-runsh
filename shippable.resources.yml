@@ -6,7 +6,7 @@ resources:
       sourceName: mohit5it9/sample-script
       branch: master
 
-  - name: slackNotification
+  - name: slackNotifications
     type: notification
     integration: slack
     pointer:
