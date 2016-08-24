@@ -10,7 +10,7 @@ jobs:
        - script: pwd
        #- script: ls /build
        - script: echo "works!!!"
-       - NOTIFY: slackNotification
+       - NOTIFY: slackNotifications
     on_failure:
       - script: uname -a
       - script: echo "Inside on failure"
