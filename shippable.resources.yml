@@ -20,3 +20,11 @@ resources:
       sourceName: "library/busybox"
     seed:
       versionName: latest
+  
+  - name: slackNotification
+    type: notification
+    integration: slack
+    pointer:
+      recipients:
+        - "#slack_notifications"
+
