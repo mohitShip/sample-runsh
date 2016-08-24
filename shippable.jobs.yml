@@ -8,8 +8,8 @@ jobs:
         - script: IN/sample-script/gitRepo/echo.sh
     on_success:
        - script: pwd
-       - script: ls /build
-       - script: /build/IN/sample-script/gitRepo/echo.sh
+       #- script: ls /build
+       - script: echo "works!!!"
        - NOTIFY: slackNotification
     on_failure:
       - script: uname -a
