@@ -7,8 +7,10 @@ jobs:
       - TASK:
         - script: IN/sample-script/gitRepo/echo.sh
     on_success:
-      - script: uname -a
-      - script: echo "this works"
+       - script: pwd
+       - script: ls /build
+       - script: /build/IN/sample-script/gitRepo/echo.sh
+       - NOTIFY: slackNotification
     on_failure:
       - script: uname -a
       - script: echo "Inside on failure"
