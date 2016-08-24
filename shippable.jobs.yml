@@ -7,11 +7,11 @@ jobs:
       - TASK:
         - script: IN/sample-script/gitRepo/echo.sh
     on_success:
-      - uname -a
-      - echo "this works"
+      - script: uname -a
+      - script: echo "this works"
     on_failure:
-      - uname -a
-      - echo "Inside on failure"
+      - script: uname -a
+      - script: echo "Inside on failure"
 
   #- name: dv-man
    # type: manifest
