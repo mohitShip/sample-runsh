@@ -14,6 +14,7 @@ jobs:
     on_failure:
       - script: uname -a
       - script: echo "Inside on failure"
+      - NOTIFY: slackNotifications
 
   # - name: dv-man
   #   type: manifest
