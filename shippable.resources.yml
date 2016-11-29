@@ -1,5 +1,5 @@
 resources:
-  - name: sample-script
+  - name: script-random
     type: gitRepo
     integration: github
     pointer:
