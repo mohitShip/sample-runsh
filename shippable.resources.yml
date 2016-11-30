@@ -28,5 +28,3 @@ resources:
   #     sourceName: "library/busybox"
   #   seed:
   #     versionName: latest
-
-
