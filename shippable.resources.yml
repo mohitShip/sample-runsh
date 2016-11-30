@@ -1,32 +1,13 @@
 resources:
-  - name: sample-script
+  - name: sample-script-3
     type: gitRepo
     integration: github
     pointer:
-      sourceName: mohit5it9/sample-script
+      sourceName: BharathShippable/sample-script
       branch: master
-
-  - name: slackNotifications
+  - name: notification-slack
     type: notification
     integration: slack
     pointer:
       recipients:
-        - "#slack_notifications"
-
-  # - name: sn-nginx
-  #   type: image
-  #   integration: dockerhub
-  #   pointer:
-  #     sourceName: "library/nginx"
-  #   seed:
-  #     versionName: latest
-
-  # - name: sn-busybox
-  #   type: image
-  #   integration: dockerhub
-  #   pointer:
-  #     sourceName: "library/busybox"
-  #   seed:
-  #     versionName: latest
-
-
+        - "#test_interns"
