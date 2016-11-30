@@ -3,7 +3,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: mohit5it9/sample-script
+      sourceName: himanshu0503/sample-script
       branch: master
 
   - name: slackNotifications
