@@ -1,13 +1,13 @@
 resources:
-  - name: sample-script-3
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: BharathShippable/sample-script
-      branch: master
-  - name: notification-slack
-    type: notification
-    integration: slack
-    pointer:
-      recipients:
-        - "#test_interns"
+  #- name: sample-script-3
+  #  type: gitRepo
+  #  integration: github
+  #  pointer:
+  #    sourceName: BharathShippable/sample-script
+  #    branch: master
+  #- name: notification-slack
+  #  type: notification
+  #  integration: slack
+  #  pointer:
+  #    recipients:
+  #      - "#test_interns"
