@@ -10,11 +10,11 @@ jobs:
        - script: pwd
        #- script: ls /build
        - script: echo "works!!!"
-       - NOTIFY: slackNotifications
+       #- NOTIFY: slackNotifications
     on_failure:
       - script: uname -a
       - script: echo "Inside on failure"
-      - NOTIFY: slackNotifications
+      #- NOTIFY: slackNotifications
 
   # - name: dv-man
   #   type: manifest
