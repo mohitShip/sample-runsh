@@ -13,13 +13,13 @@ resources:
   #    recipients:
   #      - "#slack_notifications"
 
-   - name: sn-nginx
-     type: image
-     integration: dockerhub
-     pointer:
-       sourceName: "library/nginx"
-     seed:
-       versionName: latest
+  - name: sn-nginx
+    type: image
+    integration: dockerhub
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
 
   # - name: sn-busybox
   #   type: image
