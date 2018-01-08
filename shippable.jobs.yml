@@ -2,7 +2,7 @@ jobs:
   - name: script-random
     type: runSh
     steps:
-      - IN: sample-script
+      - IN: sn-nginx
       - IN: triggertest1
       - TASK:
         - script: IN/sample-script/gitRepo/echo.sh
