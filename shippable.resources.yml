@@ -6,20 +6,20 @@ resources:
       sourceName: mohit5it9/sample-script
       branch: master
 
-  - name: slackNotifications
-    type: notification
-    integration: slack
-    pointer:
-      recipients:
-        - "#slack_notifications"
+  #- name: slackNotifications
+  #  type: notification
+  #  integration: slack
+  #  pointer:
+  #    recipients:
+  #      - "#slack_notifications"
 
-  # - name: sn-nginx
-  #   type: image
-  #   integration: dockerhub
-  #   pointer:
-  #     sourceName: "library/nginx"
-  #   seed:
-  #     versionName: latest
+   - name: sn-nginx
+     type: image
+     integration: dockerhub
+     pointer:
+       sourceName: "library/nginx"
+     seed:
+       versionName: latest
 
   # - name: sn-busybox
   #   type: image
