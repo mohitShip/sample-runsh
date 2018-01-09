@@ -1,10 +1,10 @@
 resources:
-  - name: sample-script
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: mohit5it9/sample-script
-      branch: master
+  #- name: sample-script
+  #  type: gitRepo
+  #  integration: github
+  #  pointer:
+  #    sourceName: mohit5it9/sample-script
+  #    branch: master
 
   #- name: slackNotifications
   #  type: notification
