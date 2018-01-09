@@ -4,8 +4,8 @@ jobs:
     steps:
       - IN: sn-nginx
       - IN: triggertest1
-      - TASK:
-        - script: IN/sample-script/gitRepo/echo.sh
+      #- TASK:
+      #  - script: IN/sample-script/gitRepo/echo.sh
     on_success:
        - script: pwd
        #- script: ls /build
